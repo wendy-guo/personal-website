@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>wendy guo</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="wrapper main">
+      <div class="top-bar">
+        <i class="material-icons">place</i><span id="city">toronto</span>
+        <i class="material-icons">email</i
+        ><span id="email">wendy.guo@live.com</span>
+      </div>
+      <div class="greeting">
+        <span class="greeting-1">hello! </span>
+        <br />
+        <span class="greeting-2">my name is</span>
+        <span class="secondary greeting-3">Wendy Guo.</span>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="about">
+        <div class="diamond"></div>
+        <span class="heading secondary">about</span>
+        <p>
+          Hey! My name is Wendy and I'm currently in my third year studying
+          Computer Science at the University of Toronto.
+        </p>
+      </div>
+      <div>links
+        <i class="fab fa-github"></i><span>wendy-guo </span>
+        <i class="material-icons">email</i
+        ><span id="email">wendy.guo@live.com</span>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="projects">
+        <div class="diamond"></div>
+        <span class="heading secondary">projects</span>
+        <div id="project-info"></div>
+    </div>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="app.js"></script>
+    <script src="project.js" type="text/babel"></script>
+  </body>
+</html>
