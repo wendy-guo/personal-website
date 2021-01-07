@@ -6,15 +6,15 @@ const project_info = [
   {
     name: "architect",
     date: "June 2020 - August 2020",
-    description: "Build 3D animated structures with this library.",
+    description:
+      "JavaScript library to render animated 3D structures. Built using JavaScript with WebGL.",
     code: "https://github.com/wendy-guo/architect.js",
     site: "https://architectjs.herokuapp.com/",
   },
   {
     name: "playlistalyze",
     date: "September 2020",
-    description:
-      "Analyze your Spotify playlists to view your favourite artists and genres.",
+    description: "Analyze your Spotify playlists to find out your music taste.",
     code: "https://github.com/wendy-guo/playlistalyze",
     site: "https://playlistalyze.herokuapp.com/",
   },
@@ -22,7 +22,7 @@ const project_info = [
     name: "card-jitsu",
     date: "November 2020 - December 2020",
     description:
-      "A single player card game from Club Penguin. Built with React and Node.js. ",
+      "The classic card game from Club Penguin. Built with React and Node.js. ",
     code: "https://github.com/wendy-guo/card-jitsu",
     site: "https://acard-jitsu.herokuapp.com/",
   },
@@ -94,7 +94,10 @@ class ProjectInfo extends Projects {
     return (
       <React.Fragment>
         <div>
-          <img src={`./images/${this.props.info.name}.gif`} />
+          <img
+            className="project-gif"
+            src={`./images/${this.props.info.name}.gif`}
+          />
         </div>
         <div className="project-info">
           <span
