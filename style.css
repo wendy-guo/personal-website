@@ -114,17 +114,38 @@ button:hover {
 .about {
   height: 100%;
   padding: 5%;
+  padding-left: 10%;
+  width: 50%;
 }
 
 .about p {
-  width: 50%;
+  width: 40vw;
   margin-top: 180px;
   font-size: 20px;
+}
+
+.links {
+  width: 50%;
+  height: 100%;
+  padding-left: 10%;
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.links div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-bottom: 10px;
 }
 
 .projects {
   width: 100%;
   padding: 5%;
+  padding-left: 10%;
 }
 
 .projects .diamond {
@@ -140,6 +161,23 @@ button:hover {
 .project-list {
   width: 100%;
   margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #595978 !important;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .project {
@@ -178,7 +216,7 @@ button:hover {
   }
 }
 
-img {
+.project-gif {
   max-width: 30vw;
   border: 4px solid white;
   border-radius: 3%;
